@@ -3,12 +3,32 @@
 
 using namespace std;
 
+
+struct ClassName{
+    std::string  classname;
+    std::string methods;
+    std::string feilds;
+};
+
+
+
+struct Relationships {
+     std::string name;              
+     std::vector<ClassName> Relationships;       
+};
+
 int main()
 {
     int N;
     
     cout << "Please Enter Number of classes: ";
     cin >> N;
+    
+    
+    //vector<vector<vector<vector<int>>>> vec(100, vector<vector<vector<int>>>
+    //                                       (200, vector<vector<int>>
+    //                                       (100, vector<int>
+    //                                       (50))));
     
     vector<string> store(N);
     
@@ -23,6 +43,8 @@ int main()
     {
         cout << store[i] << '\t';
     }
+    
+    
     
     return 0;
 }
